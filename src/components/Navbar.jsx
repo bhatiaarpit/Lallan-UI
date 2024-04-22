@@ -7,12 +7,13 @@ const Navbar = () => {
       <nav className="flex w-full max-w-screen-xl items-center mx-auto">
         <img id="RNRlogo" className="ml-10 max-sm:ml-4" src={RNRLogo} alt="RNR Logo" width={100} height={100}/>
         <div className="flex-1"></div>
-       
-        <h1 className="mr-10 p-10 text-xl font-bold text-orange-400 hover:text-white">USE LALLAN</h1>
+
+        <h1 id='navheading' className="mr-10 p-10 text-xl font-bold text-orange-400 hover:text-white text-Slackey">USE Lallan <span className='text-base'>v1</span></h1>
+
        
         <div id="navLists" className="flex ">
           {navLists.map((nav) => (
-            <div key={nav} className="text-base cursor-pointer text-gray-400 hover:text-white transition-all pl-2 pr-2   max-sm:hidden">
+            <div key={nav} className="cursor-pointer text-gray-400 hover:text-white transition-all pl-2 pr-2 text-2xl max-sm:hidden">
               {nav}
             </div>
           ))}

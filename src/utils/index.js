@@ -1,2 +1,4 @@
-import Logo from "public/assets/images/Rnr logo 4.png.";
+import Logo from "../../public/assets/images/Rnr_logo_4.png";
+
+
 export const RNRLogo = Logo;

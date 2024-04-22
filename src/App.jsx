@@ -40,7 +40,7 @@ const App = () => {
     <body>
       <Navbar />
       <Hero />
-      <motion.div className="cursor" />
+      <motion.div className="cursor max-sm:hidden" />
     </body>
   );
 };
