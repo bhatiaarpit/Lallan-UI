@@ -1,6 +1,8 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "../assets/Rnr_logo_4.png";
+// import logo from "../assets/RNR_logo_5.png";
+import logo from "../assets/RNR_Logo_5.png";
+
 import { navItems } from "../constants";
 
 const Navbar = () => {
@@ -11,14 +13,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
+    <nav className="sticky top-0 z-50 py-7 backdrop-blur-lg border-b mb-12 border-neutral-700/80">
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
-            <span className="text-xl tracking-tight">RAG & ROCK</span>
+            <img className="h-7 max-sm:ml-5" src={logo} alt="Logo" />
+            {/* <span className="text-xl tracking-tight"></span> */}
           </div>
-          <ul className="hidden lg:flex ml-[27%] mr-auto space-x-12">
+          <ul id="navLists"className="hidden lg:flex ml-[27%] mr-10 space-x-12 ">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a href={item.href}>{item.label}</a>

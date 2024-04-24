@@ -1,8 +1,9 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import FeatureSection from "./components/FeatureSection";
-import Workflow from "./components/Workflow";
+// import Workflow from "./components/Workflow";
 import Footer from "./components/Footer";
+import LkoFamous from "./components/LkoFamous";
 
 import Testimonials from "./components/Testimonials";
 import { useEffect, useState } from "react";
@@ -42,11 +43,11 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-7xl mx-auto pt-20 px-6">
+      <div className="max-w-9xl max-sm:max-w-3xl mx-auto pt-20 px-6 overflow-hidden" >
         <HeroSection />
         <FeatureSection />
-        <Workflow />
-       
+        {/* /* <Workflow /> */}
+        <LkoFamous/>
         <Testimonials />
         <Footer />
         <motion.div className="cursor max-sm:hidden" />
