@@ -1,6 +1,7 @@
 
 import image3 from "../assets/bg-im.png";
-
+import image1 from "../assets/logo.png"
+import image2 from "../assets/RNR_Logo_3.png"
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -34,6 +35,11 @@ const HeroSection = () => {
         </a>
         
       </div><br />
+      <div className="flex items-center justify-center">
+  <img src={image1} className="max-w-20 h-auto mr-2" alt="Team 1" />
+  <p className="text-3xl">x</p>
+  <img src={image2} className="max-w-20 h-auto ml-2" alt="Team 2" />
+</div>
       {/* <div className='flex gap-10' >
           <img src={image4}  className='max-sm:w-13 h-13' alt="" />
           <p className='mt-3 text-3xl max-sm:mt-2 text-xl'>x</p>
