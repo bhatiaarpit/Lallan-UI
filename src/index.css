@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Delicious+Handrawn&family=Jersey+10&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Gothic+Coding&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Single+Day&family=Skranji:wght@400;700&family=Slackey&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", sans-serif;
+  color-scheme: dark;
+}
+
+@font-face{
+  font-family: 'samarkan';
+  src: url('../static/font/SAMAN___.TTF');
+}
+
+.cursor {
+  background-color: rgba(232, 140, 3, 0.518);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: fixed;
+    top: var(--cursor-y);
+    left: var(--cursor-x);
+    mix-blend-mode: difference;
+    transition: transform 0.6s ease; /* Adjust timing and easing function as needed */
+    transform: translate(var(--cursor-velocity-x), var(--cursor-velocity-y));
+    pointer-events: none;
+  }
+
+::-webkit-scrollbar{
+  width: 15px; 
+}
+::-webkit-scrollbar-track{
+  background: transparent ; 
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(244,159,16);
+  background: linear-gradient(90deg, rgba(244,159,16,1) 35%, rgba(255,0,0,0.6487045501794468) 100%);
+  border-radius: 10px;
+}
+
+
+#navLists{
+  padding: 10px;
+  border-radius: 2rem;
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 2px solid rgba(206, 134, 0, 0.692);
+  font-family: "Lobster", sans-serif;
+  font-size: 20px;
+}
+#navLists:hover{
+  box-shadow: 0 0 20px rgba(206, 134, 0, 0.267);
+}
+
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size:16px;
+  font-weight: 400;
+  margin: 3px;
+  line-height: 15px;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; 
+  
+}
+
+.btn-5 {
+  line-height: 34px;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-color: rgba(255, 115, 64, 0.938);
+  border-radius: 8px;
+  max-width: 100px; 
+} 
+
+.hero-btn {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-color: rgba(255, 115, 64, 0.938);
+  border-radius: 8px;
+} 
+
+.btn:hover {
+  background-color: rgb(255, 99, 79);
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
+.glass{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
