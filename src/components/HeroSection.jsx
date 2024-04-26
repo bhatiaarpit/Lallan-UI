@@ -28,7 +28,7 @@ const HeroSection = () => {
       
       <div className="flex justify-center my-3">
         <a
-          href="/"
+          href="https://4ab7-103-157-195-81.ngrok-free.app/"
           className="btn hero-btn bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
         >
           Try Lallan!
