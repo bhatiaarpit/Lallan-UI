@@ -15,6 +15,7 @@ import user4 from '../assets/profile-pictures/user4.jpg';
 import user5 from '../assets/profile-pictures/user5.jpg';
 import user6 from '../assets/profile-pictures/user6.jpg';
 import user7 from '../assets/profile-pictures/user7.jpg';
+import user8 from '../assets/profile-pictures/user8.png';
 import linkd from '../assets/linkedin.svg';
 import twitr from '../assets/x_twitter.svg';
 import githb from '../assets/github.svg';
@@ -64,7 +65,7 @@ export const testimonials = [
   {
     user: "Aarushi",
     company: "Backend Team",
-    image: user5,
+    image: user8,
     text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
     social: [
       { icon: linkd, url: "https://www.linkedin.com/in/aarushi-1b24211a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
